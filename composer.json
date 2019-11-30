@@ -1,6 +1,12 @@
 {
     "name": "riddlestone/zf-portals",
     "description": "A module to pull configuration together for portals, such as a public portal, an admin portal, etc.",
+    "keywords": [
+        "config",
+        "zf"
+    ],
+    "homepage": "https://github.com/riddlestone/zf-portals",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Riddlestone\\ZF\\Portals\\": "src/"
@@ -8,8 +14,9 @@
     },
     "require": {
         "php": "^7.2",
-        "zendframework/zend-modulemanager": "^2.8",
         "container-interop/container-interop": "^1.2",
+        "zendframework/zend-component-installer": "^1.0 || ^0.7",
+        "zendframework/zend-modulemanager": "^2.8",
         "zendframework/zend-servicemanager": "^3.4"
     },
     "autoload-dev": {
@@ -19,5 +26,20 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.4"
-    }
+    },
+    "extra": {
+        "zf": {
+            "component": "Riddlestone\\ZF\\Portals"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andrew Riddlestone",
+            "email": "andrew.riddlestone@gmail.com"
+        }
+    ]
 }
