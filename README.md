@@ -2,6 +2,10 @@
 
 A module to pull configuration together for portals, such as a public portal, an admin portal, etc.
 
+> ## Repository archived 2020-02-06
+>
+> This repository has moved to [riddlestone/brokkr-portals](https://github.com/riddlestone/brokkr-portals).
+
 ## Adding Configuration
 
 To add information about a portal, add it to a module configuration file under `portals.{portal_name}`:
